@@ -1,0 +1,147 @@
+h1{
+	font-size: 32px;
+	color: darkred;
+}
+.container i{
+	font-size: 120px;
+    color: cadetblue;
+}
+/* cursor start */
+h2{
+	font-size: 28px;
+	color: darkgreen;
+}
+h3{
+	font-size: 24px;
+	color: blueviolet;
+}
+h4{
+	font-size: 20px;
+	color: dodgerblue;
+}
+p{
+	font-size: 16px;
+	color: black;
+}
+/* cursor */
+.c_anima{
+	overflow: hidden;
+	margin: 0 auto;
+}
+.cursor{
+	box-sizing: border-box;
+	float: left;
+	border: 2px solid green;
+	width: 50%;
+	overflow: hidden;
+}
+.alias {cursor: alias;}
+.all-scroll {cursor: all-scroll;}
+.auto {cursor: auto;}
+.cell {cursor: cell;}
+.col-resize {cursor: col-resize;}
+.context-menu {cursor: context-menu;}
+.copy {cursor: copy;}
+.crosshair {cursor: crosshair;}
+.default {cursor: default;}
+.e-resize {cursor: e-resize;}
+.ew-resize {cursor: ew-resize;}
+.grab {cursor: -webkit-grab; cursor: grab;}
+.grabbing {cursor: -webkit-grabbing; cursor: grabbing;}
+.help {cursor: help;}
+.move {cursor: move;}
+.n-resize {cursor: n-resize;}
+.ne-resize {cursor: ne-resize;}
+.nesw-resize {cursor: nesw-resize;}
+.ns-resize {cursor: ns-resize;}
+.nw-resize {cursor: nw-resize;}
+.nwse-resize {cursor: nwse-resize;}
+.no-drop {cursor: no-drop;}
+.none {cursor: none;}
+.not-allowed {cursor: not-allowed;}
+.pointer {cursor: pointer;}
+.progress {cursor: progress;}
+.row-resize {cursor: row-resize;}
+.s-resize {cursor: s-resize;}
+.se-resize {cursor: se-resize;}
+.sw-resize {cursor: sw-resize;}
+.text {cursor: text;}
+.url {cursor: url(myBall.cur),auto;}
+.w-resize {cursor: w-resize;}
+.wait {cursor: wait;}
+.zoom-in {cursor: zoom-in;}
+.zoom-out {cursor: zoom-out;}
+/* cursor end */
+
+/* animation start */
+.animation{
+	overflow: hidden;
+	box-sizing: border-box;
+	float: right;
+	width: 50%;
+	border: 2px solid palegreen;
+	min-height: 400px;
+	position: relative;
+}
+
+.box{
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+
+.box1{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	-webkit-position: relative;
+	position: relative;
+    /*animation-delay: 2s;*/
+	/* animation-iteration-count: 3; */
+	/* animation-direction: reverse;*/
+	/*animation-timing-function: linear;
+	animation-duration: 5s; */
+	-webkit-animation: test 5s 8 reverse linear;
+	animation: test 5s 8 reverse linear;
+
+}
+
+@-webkit-keyframes test{
+	0%{background-color: red; left: 0px; top: 0px;}
+	25%{background-color: green; left: 300px; top: 0px;}
+	50%{background-color: yellow; left: 300px; top: 300px;}
+	75%{background-color: blue; left: 0px; top: 300px;}
+	100%{background-color: aqua; left: 0px; top: 0px;}
+}
+@keyframes test{
+	0%{background-color: red; left: 0px; top: 0px;}
+	25%{background-color: green; left: 300px; top: 0px;}
+	50%{background-color: yellow; left: 300px; top: 300px;}
+	75%{background-color: blue; left: 0px; top: 300px;}
+	100%{background-color: aqua; left: 0px; top: 0px;}
+}
+
+.box2{
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	-webkit-position: relative;
+	position: relative;
+    /*animation-delay: 2s;*/
+	/* animation-iteration-count: 3; */
+	/* animation-direction: reverse;*/
+	/*animation-timing-function: linear;
+	animation-duration: 5s; */
+	-webkit-animation: test2 5s 8  linear;
+	animation: test2 5s 8  linear;
+}
+@keyframes test2{
+	0%{background-color: red; left: 0px; top: 0px;}
+	25%{background-color: green; left: 300px; top: 0px;}
+	50%{background-color: yellow; left: 300px; top: 300px;}
+	75%{background-color: blue; left: 0px; top: 300px;}
+	100%{background-color: aqua; left: 0px; top: 0px;}
+
+
+/* animation end */
